@@ -10,7 +10,7 @@ Bugs connus :
 		Charger dans un registre une valeur négative
 
 Instructions:
-	jmp : jump inconditionnel
+	jmp : jump inconditionnel\n
 	jz : jump si derniere soustraction = 0
 	jdz : jump si derniere soustraction != 0
 	jn : jump si derniere soustraction negatif
