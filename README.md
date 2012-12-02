@@ -61,8 +61,8 @@ Resultat :
 	x"C04F002", --jp francis
 	x"0030302", --add r3 r3 r2
 	x"1020102", --sub r2 r1 r2
-	x"80102ff", --rmem r1 r2 #allo
-	x"9FF0508", --wmem r5 r8 #sdasa
+	x"80102ff", --rmem r1 r2 #Commentaire2
+	x"9FF0508", --wmem r5 r8 #Commentaire1
 	x"D01ffff", --rext r1
 	x"Effff05", --wext r5
 	x"A000000", --mov r0 0
