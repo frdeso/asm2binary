@@ -1,7 +1,7 @@
 asm2binary
 ==========
 
-Transforme du code assembler en binaire
+Transforme du code assembler en instruction binaire pour le processeur à usage multiple du cours INF3500
 
 N.B.
 Bugs connus (Les patchs sont les bienvenues pour ces problèmes): 
