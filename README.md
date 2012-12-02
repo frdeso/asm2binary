@@ -19,6 +19,9 @@ Instructions:
 - wext : écrit dans la mémoire externe
 - rmem : lis mémoire interne
 - wmem : ecrit dans memoire interne
+- mov : 
+- add :
+- sub : 
 
 Exemple : 
 <pre><code>
