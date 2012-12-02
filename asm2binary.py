@@ -107,10 +107,17 @@ def analiserLigneHexa(li, diction):    #
 	instruction = operandes[0]+operandes[1]+operandes[2]+operandes[3]	
 	return instruction
 
-
+def parsing(content):
+	updatedContent = []
+	for line in content:
+		if not line.strip():
+			continue
+		else:
+			updatedContent.append(line)
+	return updatedContent
 
 fichier = open(sys.argv[1])
-content = fichier.readlines()
+content = parsing(fichier.readlines())
 diction = trouverEtiquettes(content)
 vecteur = "("
 for i in content:
