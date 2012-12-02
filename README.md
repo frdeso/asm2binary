@@ -4,7 +4,7 @@ asm2binary
 Transforme du code assembler en binaire
 
 N.B.
-Bugs connus : 
+Bugs connus (Les patchs sont les bienvenues pour ces problèmes): 
 - Le programme plante  si il y a un commentaire sur même ligne que label
 - Le programme plante  si il y a un ligne vide
 - Le programme plante  si il y a un chargement d'une valeur négative dans un registre
