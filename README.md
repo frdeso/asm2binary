@@ -3,6 +3,8 @@ asm2binary
 
 Transforme du code assembler en instruction binaire pour le processeur à usage multiple du cours INF3500
 
+Par Francis Deslauriers et Anthony Buffet
+
 N.B.
 Bugs connus (Les patchs sont les bienvenues pour ces problèmes): 
 - Le programme plante  si il y a un commentaire sur même ligne que label
