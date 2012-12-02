@@ -1,0 +1,25 @@
+mov r1 99
+jz allo
+francis:
+jn francis
+jp francis
+add r3 r3 r2
+sub r2 r1 r2
+test:
+rmem r1 r2 #allo
+wmem r5 r8 #sdasa
+rext r1
+wext r5
+mov r0 0
+allo:
+mov r2 3
+mov r5 0
+curly:
+wmem r0 r2
+add r0 r0 r1
+sub r6 r4 r0
+jp curly
+jdz allo
+rmem r0 r4
+rmem r2 r5
+jmp test
