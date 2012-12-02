@@ -5,9 +5,9 @@ Transforme du code assembler en binaire
 
 N.B.
 Bugs connus : 
-- Commentaire sur même ligne que label
-- Ligne vide
-- Charger dans un registre une valeur négative
+- Le programme plante  si il y a un commentaire sur même ligne que label
+- Le programme plante  si il y a un ligne vide
+- Le programme plante  si il y a un chargement d'une valeur négative dans un registre
 
 Instructions:
 - jmp : jump inconditionnel	
@@ -15,6 +15,10 @@ Instructions:
 - jdz : jump si derniere soustraction != 0
 - jn : jump si derniere soustraction negatif	
 - jp : jump si derniere soustraction positif
+- rext : lis dans la mémoire externe
+- wext : écrit dans la mémoire externe
+- rmem : lis mémoire interne
+- wmem : ecrit dans memoire interne
 
 Exemple : 
 <pre><code>
@@ -26,8 +30,8 @@ jp francis
 add r3 r3 r2
 sub r2 r1 r2
 test:
-rmem r1 r2 #allo
-wmem r5 r8 #sdasa
+rmem r1 r2 #Commentaire2
+wmem r5 r8 #Commentaire1
 rext r1
 wext r5
 mov r0 0
