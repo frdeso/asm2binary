@@ -1,4 +1,7 @@
 #! /usr/bin/python
+# Francis Deslauriers
+# Anthony Buffet
+
 import sys
 def trouverEtiquettes(content):
 	dictionnaire = {}
