@@ -129,5 +129,5 @@ for i in content:
 		instruc = analiserLigneHexa(i,diction)
 		vecteur = vecteur+ "\tx\""+instruc+"\", --"+i
 
-vecteur = vecteur + "\tothers => (others => \'1\'));"
+vecteur = vecteur + "\n\tothers => (others => \'1\'));"
 print (vecteur)
