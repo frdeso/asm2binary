@@ -36,8 +36,10 @@ def analiserLigneHexa(li, diction):    #
 	if op[0] == 'mov': # charge en memoire
 		operandes[0] = str("0xA"[2:])
 		operandes[1] = str(hex(int(op[1][1:]))[2:].zfill(2))
-		operandes[2] = str(hex(int(0))[2:].zfill(2))
-		operandes[3] = str(hex(int(op[2]))[2:].zfill(2))
+
+		buff = str(hex(int(op[2]))[2:].zfill(4))
+		operandes[2] = buff[0] + buff[1]
+		operandes[3] = buff[2] + buff[3]
 	elif op[0] == 'jmp': #jmp non conditionnel
 		operandes[0] = str("0xC"[2:].zfill(1))
 		operandes[1] = str(hex(0x0)[2:].zfill(2))
