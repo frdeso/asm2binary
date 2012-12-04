@@ -1,4 +1,7 @@
 #! /usr/bin/python
+# Francis Deslauriers
+# Anthony Buffet
+
 import sys
 def trouverEtiquettes(content):
 	dictionnaire = {}
@@ -103,7 +106,6 @@ def analiserLigneHexa(li, diction):    #
 
 	instruction = operandes[0]+operandes[1]+operandes[2]+operandes[3]	
 	return instruction
-
 
 def parsing(content):
 	updatedContent = []
