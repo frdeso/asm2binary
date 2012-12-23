@@ -1,7 +1,8 @@
 asm2binary
 ==========
 
-Transforme du code assembler en instruction binaire pour le processeur à usage multiple du cours INF3500
+Transforme du code assembler en instruction binaire pour le processeur à usage
+multiple du cours INF3500 à Polytechnique Montréal
 
 Par Francis Deslauriers et Anthony Buffet
 
