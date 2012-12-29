@@ -110,13 +110,20 @@ def analiserLigneHexa(li, diction):    #
 	return instruction
 
 def parsing(content):
-	updatedContent = []
-	for line in content:
-		if not line.strip():
-			continue
-		else:
-			updatedContent.append(line)
-	return updatedContent
+        updatedContent = []
+
+        for line in content:
+                if not line.strip():
+                        continue
+                else:
+                        commentLookup = line.find("#")
+                        if commentLookup > -1 and line[commentLookup-2] == ':': # Comments will NEED to have a space before hashtag
+                                line = line[0:commentLookup-1]
+                                line += '\n'
+                        updatedContent.append(line)
+
+        return updatedContent
+
 
 fichier = open(sys.argv[1])
 content = parsing(fichier.readlines())
