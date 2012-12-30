@@ -8,8 +8,8 @@ Par Francis Deslauriers et Anthony Buffet
 
 N.B.
 Bugs connus (Les patchs sont les bienvenues pour ces problèmes): 
-- Le programme plante  si il y a un commentaire sur même ligne que label
-- ~~Le programme plante  si il y a un ligne vide~~ Merci Diastro
+- ~~Le programme plante  si il y a un commentaire sur même ligne que label~~ Merci [David Albertson](https://github.com/Diastro)
+- ~~Le programme plante  si il y a un ligne vide~~ Merci [David Albertson](https://github.com/Diastro)
 - Le programme plante  si il y a un chargement d'une valeur négative dans un registre
 
 Instructions:
