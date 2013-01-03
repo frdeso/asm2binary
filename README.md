@@ -20,13 +20,13 @@ Par Francis Deslauriers et Anthony Buffet
 Compile assembly code into binary instruction that are understood by the VHDL multi-usage CPU designed during the digital circuit design class (INF3500) at Polytecnique Montréal.
 
 
-
 N.B.
 Known bugs (Patches are welcome): 
 - ~~Crash if comment on the same line of label~~ Thanks [David Albertson](https://github.com/Diastro)
 - ~~Crash if empty line~~ Thanks [David Albertson](https://github.com/Diastro)
 - Crash if negative value is loaded in a register.
 
+By Francis Deslauriers and Anthony Buffet
 
 
 Instructions:
