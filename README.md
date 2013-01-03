@@ -1,5 +1,6 @@
 asm2binary
 ==========
+[English version will follow]
 
 Transforme du code assembler en instruction binaire pour le processeur à usage
 multiple du cours INF3500 à Polytechnique Montréal
@@ -10,23 +11,39 @@ N.B.
 Bugs connus (Les patchs sont les bienvenues pour ces problèmes): 
 - ~~Le programme plante  si il y a un commentaire sur même ligne que label~~ Merci [David Albertson](https://github.com/Diastro)
 - ~~Le programme plante  si il y a un ligne vide~~ Merci [David Albertson](https://github.com/Diastro)
-- Le programme plante  si il y a un chargement d'une valeur négative dans un registre
+- Le programme plante  si il y a un chargement d'une valeur négative dans un registre.
+
+Par Francis Deslauriers et Anthony Buffet
+
+--English--
+
+Compile assembly code into binary instruction that are understood by the VHDL multi-usage CPU designed during the digital circuit design class (INF3500) at Polytecnique Montréal.
+
+
+
+N.B.
+Known bugs (Patches are welcome): 
+- ~~Crash if comment on the same line of label~~ Thanks [David Albertson](https://github.com/Diastro)
+- ~~Crash if empty line~~ Thanks [David Albertson](https://github.com/Diastro)
+- Crash if negative value is loaded in a register.
+
+
 
 Instructions:
-- jmp : jump inconditionnel	
-- jz : jump si derniere soustraction = 0	
-- jdz : jump si derniere soustraction != 0
-- jn : jump si derniere soustraction negatif	
-- jp : jump si derniere soustraction positif
-- rext : lis dans la mémoire externe
-- wext : écrit dans la mémoire externe
-- rmem : lis mémoire interne
-- wmem : ecrit dans memoire interne
-- mov : 
-- add :
-- sub : 
+- jmp : Saut inconditionnel / unconditionnal jump	
+- jz : Saut si derniere soustraction = 0 / Jump if last substraction is equals to zero	
+- jdz : Saut si derniere soustraction != 0 / Jump if last substraction is not equals to zero	
+- jn : Saut si derniere soustraction negatif / Jump if the result of the last substract	is below zero
+- jp : Saut si derniere soustraction positif / Jump if the result of the last substract	is above zero
+- rext : Lis dans la mémoire externe / Read from external memory
+- wext : Écrit dans la mémoire externe / Write to external memory
+- rmem : Lis mémoire interne / Read from internal memory
+- wmem : Écrit dans memoire interne / Write to external memory
+- mov : Charge une valeur dans un registe / Load value into register
+- add : Addition deux registres / Add to registers
+- sub : Soustrait deux registres / Substract to registers
 
-Exemple : 
+Exemple/example : 
 <pre><code>
 mov r1 99
 jz allo
@@ -36,8 +53,8 @@ jp francis
 add r3 r3 r2
 sub r2 r1 r2
 test:
-rmem r1 r2 #Commentaire2
-wmem r5 r8 #Commentaire1
+rmem r1 r2 #Comment2
+wmem r5 r8 #Comment1
 rext r1
 wext r5
 mov r0 0
@@ -64,8 +81,8 @@ Resultat :
 	x"C04F002", --jp francis
 	x"0030302", --add r3 r3 r2
 	x"1020102", --sub r2 r1 r2
-	x"80102ff", --rmem r1 r2 #Commentaire2
-	x"9FF0508", --wmem r5 r8 #Commentaire1
+	x"80102ff", --rmem r1 r2 #Comment2
+	x"9FF0508", --wmem r5 r8 #Comment1
 	x"D01ffff", --rext r1
 	x"Effff05", --wext r5
 	x"A000000", --mov r0 0
