@@ -17,7 +17,7 @@ Par Francis Deslauriers et Anthony Buffet
 
 --English--
 
-Compile assembly code into binary instruction that are understood by the VHDL multi-usage CPU designed during the digital circuit design class (INF3500) at Polytecnique Montréal.
+Compile assembly code into binary instruction that are understood by the VHDL multi-usage CPU designed during the digital circuit design class (INF3500) at Polytechnique Montréal.
 
 
 N.B.
